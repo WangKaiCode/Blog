@@ -19,8 +19,8 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "WangKaiCode",
+	subtitle: "One Blog website",
 
 	lang: SITE_LANG,
 
@@ -43,23 +43,24 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"assets/desktop-banner/1.webp",
-				"assets/desktop-banner/2.webp",
-				"assets/desktop-banner/3.webp",
-				"assets/desktop-banner/4.webp",
-				"assets/desktop-banner/5.webp",
-				"assets/desktop-banner/6.webp",
-				"assets/desktop-banner/7.webp",
-			], // 桌面横幅图片
+				"assets/desktop-banner/1.png",
+				"assets/desktop-banner/2.png",
+				"assets/desktop-banner/3.png",
+				"assets/desktop-banner/4.png",
+				"assets/desktop-banner/5.png",
+				"assets/desktop-banner/6.png",
+				"assets/desktop-banner/7.png",
+				"assets/desktop-banner/8.png",
+			], // Desktop banner images
 			mobile: [
-				"assets/mobile-banner/1.webp",
-				"assets/mobile-banner/2.webp",
-				"assets/mobile-banner/3.webp",
-				"assets/mobile-banner/4.webp",
-				"assets/mobile-banner/5.webp",
-				"assets/mobile-banner/6.webp",
-				"assets/mobile-banner/7.webp",
-			], // 移动横幅图片
+				"assets/mobile-banner/1.png",
+				"assets/mobile-banner/2.png",
+				"assets/mobile-banner/3.png",
+				// "assets/mobile-banner/4.webp",
+				// "assets/mobile-banner/5.webp",
+				// "assets/mobile-banner/6.webp",
+				// "assets/mobile-banner/7.webp",
+			], // Mobile banner images// 移动横幅图片
 		}, // 使用本地横幅图片
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
@@ -67,7 +68,7 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1, // 轮播间隔时间（秒）
+			interval: 3, // 轮播间隔时间（秒）
 		},
 
 		homeText: {
@@ -75,10 +76,10 @@ export const siteConfig: SiteConfig = {
 			title: "Mizuki", // 主页横幅主标题
 
 			subtitle: [
-				"One demo website",
-				"Carousel Text1",
-				"Carousel Text2",
-				"Carousel Text3",
+				"One Blog website",
+				"Welcome to my Blog!",
+				"If this blog helps you, please give me a like!",
+				"Thank You!!!",
 			], // 主页横幅副标题，支持多文本
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -121,17 +122,12 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					url: "https://github.com/WangKaiCode/Blog",
 					external: true,
 				},
 				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					name: "ZhiHu",
+					url: "https://zhihu.com/people/Panda",
 					external: true,
 				},
 			],
@@ -169,23 +165,18 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Mizuki",
+	name: "WangKaiCode",
 	bio: "这是一个描述",
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
-		},
-		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/WangKaiCode",
+		},
+		{
+			name: "ZhiHu",
+			icon: "fa6-brands:zhihu",
+			url: "https://zhihu.com/people/Panda",
 		},
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
