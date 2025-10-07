@@ -1,3 +1,17 @@
+---
+title: 小白学网络
+published: 2025-10-07
+pinned: true
+description: 自学网络的笔记
+category: 计算机网络
+licenseName: "Unlicensed"
+author: WangKaiCode
+sourceLink: "https://github.com/WangKaiCode"
+draft: false
+date: 2025-10-06
+pubDate: 2025-10-07
+---
+
 # 小白学网络——应用层
 
 ------
